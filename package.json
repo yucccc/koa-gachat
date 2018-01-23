@@ -1,0 +1,21 @@
+{
+  "name": "koa-test",
+  "version": "0.0.1",
+  "license": "MIT",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development PORT=3666 nodemon app.js",
+    "prod": "pm2 start ecosystem.config.js --only prod-implant"
+  },
+  "dependencies": {
+    "koa": "^2.4.1",
+    "koa-bodyparser": "^4.2.0",
+    "koa-logger": "^3.1.0",
+    "koa-router": "^7.3.0",
+    "md5": "^2.2.1",
+    "mysql": "^2.15.0",
+    "socket.io": "^2.0.4"
+  },
+  "devDependencies": {
+    "cross-env": "^5.1.3"
+  }
+}
